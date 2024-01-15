@@ -11,7 +11,7 @@ export default function About() {
       <h1 className={`header ${raleway.className}`}>ABOUT ME</h1>
       
 
-      <div className="mt-10 flex flex-col items-center justify-center gap-y-5 text-center w-[96%] mx-auto md:max-w-[70vw] ">
+      <div className="mt-10 flex flex-col items-center justify-center gap-y-5 text-left lg:text-center w-[90%] mx-auto md:max-w-[70vw] ">
         <div className="my-5">
           <Image
             src={ayo}

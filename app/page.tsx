@@ -12,13 +12,13 @@ export default function Home() {
     <main className="">
       <Navbar />
       <Hero />
-      <div className="max-w-[100rem] mx-auto">
+      {/* <div className="mx-auto max-w-[100rem]"> */}
         <About />
         <Skills />
         <Projects />
         <Contact />
-        <Footer />
-      </div>
+      {/* </div> */}
+      <Footer />
     </main>
   );
 }

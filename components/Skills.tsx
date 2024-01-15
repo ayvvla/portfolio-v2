@@ -16,6 +16,7 @@ import {
   SiRedux,
   SiSupabase,
   SiTailwindcss,
+  SiTypescript,
   SiVercel,
 } from "react-icons/si";
 
@@ -23,12 +24,12 @@ const raleway = Raleway({ subsets: ["latin"] });
 
 export default function Skills() {
   return (
-    <div className=" text-center tracking-widest" id="skills">
+    <div className=" text-center tracking-widest mb-32 mt-24 px-4" id="skills">
       <h1 className={`header ${raleway.className} before:translate-x-4`}>
         Skills
       </h1>
       <p className="my-10">I have experience with these technologies </p>
-      <div className="grid w-[100%] lg:w-[80%] grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center mx-auto">
+      <div className="mx-auto grid w-[100%] gap-y-2 grid-cols-2 place-items-center md:grid-cols-3 lg:w-[80%] lg:grid-cols-4">
         <div className="icon-wrapper">
           <p className="icon-text">HTML 5</p>
           <FaHtml5
@@ -61,6 +62,13 @@ export default function Skills() {
           <p className="icon-text">Javascript</p>
           <IoLogoJavascript
             className="icons fill-yellow-600 hover:fill-yellow-900"
+            size={60}
+          />
+        </div>
+        <div className="icon-wrapper">
+          <p className="icon-text">Typescript</p>
+          <SiTypescript
+            className="icons fill-sky-600 hover:fill-sky-900"
             size={60}
           />
         </div>
@@ -116,7 +124,10 @@ export default function Skills() {
         </div>
         <div className="icon-wrapper">
           <p className="icon-text">Firebase</p>
-          <SiFirebase className="icons fill-amber-600 hover:fill-amber-400" size={60} />
+          <SiFirebase
+            className="icons fill-amber-600 hover:fill-amber-400"
+            size={60}
+          />
         </div>
         <div className="icon-wrapper">
           <p className="icon-text">Vercel</p>
