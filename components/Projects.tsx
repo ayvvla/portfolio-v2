@@ -11,7 +11,7 @@ const raleway = Raleway({ subsets: ["latin"] });
 
 export default function Projects() {
   return (
-    <div className=" mt-10 bg-gray-50 py-24 px-2" id="projects">
+    <div className="mt-16 bg-gray-50 px-2" id="projects">
       <div className="mx-auto max-w-[95%]">
         <h1
           className={`header ${raleway.className} mb-24 before:translate-x-10`}

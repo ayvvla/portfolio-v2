@@ -17,7 +17,7 @@ export default function Contact() {
   }, [state.status]);
 
   return (
-    <div className=" mx-auto bg-gray-100 px-8 py-16" id="contact">
+    <div className=" mx-auto bg-gray-100 px-8 mt-20 py-20" id="contact">
       <h1 className="header">Contact</h1>
       <div className=" mt-10 ">
         <p className="text-center text-sm md:text-lg">
