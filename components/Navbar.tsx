@@ -1,16 +1,17 @@
 "use client";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Navbar() {
   return (
-    <nav className="border-gray-200 bg-white uppercase sticky top-0 z-10">
+    <nav className="sticky top-0 z-10 border-gray-200 bg-white uppercase">
       <div className="mx-auto flex max-w-[95%] items-center justify-between py-6">
         <Link
-          to="/"
+          to=""
+          onClick={scroll.scrollToTop}
           spy={true}
           smooth={true}
           duration={500}
-          className="flex items-center space-x-3 rtl:space-x-reverse cursor-pointer"
+          className="flex cursor-pointer items-center space-x-3 rtl:space-x-reverse"
         >
           <span className="self-center whitespace-nowrap text-2xl font-semibold ">
             Ayoola
@@ -49,7 +50,8 @@ function Navbar() {
                 smooth={true}
                 duration={500}
                 offset={-100}
-                className="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 cursor-pointer "
+                activeClass="text-primary"
+                className="block cursor-pointer rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 "
               >
                 about
               </Link>
@@ -61,7 +63,8 @@ function Navbar() {
                 smooth={true}
                 duration={500}
                 offset={-100}
-                className="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 cursor-pointer "
+                activeClass="text-primary"
+                className="block cursor-pointer rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 "
               >
                 skills
               </Link>
@@ -73,7 +76,8 @@ function Navbar() {
                 smooth={true}
                 duration={500}
                 offset={-100}
-                className="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 cursor-pointer "
+                activeClass="text-primary"
+                className="block cursor-pointer rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 "
               >
                 projects
               </Link>
@@ -85,7 +89,8 @@ function Navbar() {
                 smooth={true}
                 duration={500}
                 offset={-100}
-                className="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 cursor-pointer "
+                activeClass="text-primary"
+                className="block cursor-pointer rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 "
               >
                 contact
               </Link>

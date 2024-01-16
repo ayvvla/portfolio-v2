@@ -28,7 +28,7 @@ export async function submit(prevState: prevStateProp, formData: FormData) {
     }) as React.ReactElement,
   });
 
-  revalidatePath('/')
+  revalidatePath("/");
   if (error) {
     return { status: "error", message: "error" };
   }
