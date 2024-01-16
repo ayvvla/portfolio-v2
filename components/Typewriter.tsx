@@ -7,7 +7,7 @@ export default function () {
       options={{
         strings: [
           "Hello World.",
-          "I'm a passionate and results-driven web developer on a mission to craft seamless digital experiences",
+          "I'm a passionate and results-driven web developer",
         ],
         autoStart: true,
         loop: true,
