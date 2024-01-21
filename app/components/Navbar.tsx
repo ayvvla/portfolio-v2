@@ -84,7 +84,6 @@ const Header = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-100}
             activeClass="text-primary"
             onClick={toggle}
           >
@@ -108,7 +107,6 @@ const Header = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-100}
             activeClass="text-primary"
             onClick={toggle}
           >
@@ -120,7 +118,6 @@ const Header = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-30}
             activeClass="text-primary"
             onClick={toggle}
           >
