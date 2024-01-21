@@ -4,20 +4,22 @@ import { Raleway } from "next/font/google";
 import SideWidget from "./SideWidget";
 import Typewriter from "./Typewriter";
 import { Link } from "react-scroll";
-import aa from '../assets/aaa.webp'
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
+import aa from "../../assets/aaa.webp";
 import Image from "next/image";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
 export default function Hero() {
   return (
-    <div className="hero relative min-h-[80vh] bg-base-200 bg-[aa]">
+    <div className="hero relative min-h-[80vh] bg-[aa] bg-base-200">
       <div className=""></div>
-      <Image src={aa} alt='hero image' className="hero-overlay"/>
+      <Image src={aa} alt="hero image" className="hero-overlay" />
       <div className="hero-content flex-col gap-20 text-center">
-        <div className="flex max-w-3xl flex-col items-center mt-9">
+        <div className="mt-9 flex max-w-3xl flex-col items-center">
           <h1
-            className={`text-3xl md:text-4xl font-extrabold uppercase ${raleway.className} mt-4`}
+            className={`text-3xl font-extrabold uppercase md:text-4xl ${raleway.className} mt-4`}
           >
             hello, i'm <span>Ayoola Michael</span>
           </h1>
@@ -39,7 +41,9 @@ export default function Hero() {
             duration={500}
             offset={-100}
           >
-            <button className="btn btn-primary btn-wide mt-10">View Projects</button>
+            <button className="btn btn-primary btn-wide mt-10">
+              View Projects
+            </button>
           </Link>
         </div>
         <SideWidget />

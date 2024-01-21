@@ -1,3 +1,4 @@
+"use client";
 import { Raleway } from "next/font/google";
 import {
   FaCss3Alt,
@@ -19,17 +20,40 @@ import {
   SiTypescript,
   SiVercel,
 } from "react-icons/si";
+import { LayoutGroup, motion } from "framer-motion";
+import { fadeIn } from "@/variants";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
 export default function Skills() {
   return (
-    <div className=" text-center tracking-widest mb-32 mt-24 px-4" id="skills">
-      <h1 className={`header ${raleway.className} before:translate-x-4`}>
+    <div className=" mb-32 mt-24 px-4 text-center tracking-widest" id="skills">
+      <motion.h1
+        initial="hidden"
+        variants={fadeIn("down", 0.2)}
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.3 }}
+        className={`header ${raleway.className} before:translate-x-4`}
+      >
         Skills
-      </h1>
-      <p className="my-10">I have experience with these technologies </p>
-      <div className="mx-auto grid w-[100%] gap-y-2 grid-cols-2 place-items-center md:grid-cols-3 lg:w-[80%] lg:grid-cols-4">
+      </motion.h1>
+      <motion.p
+        initial="hidden"
+        variants={fadeIn("down", 0.2)}
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.3 }}
+        className="my-10"
+      >
+        I have experience with these technologies{" "}
+      </motion.p>
+
+      <motion.div
+        initial="hidden"
+        variants={fadeIn("right", 0.1)}
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.3 }}
+        className="mx-auto grid w-[100%] grid-cols-2 place-items-center gap-y-2 md:grid-cols-3 lg:w-[80%] lg:grid-cols-4"
+      >
         <div className="icon-wrapper">
           <p className="icon-text">HTML 5</p>
           <FaHtml5
@@ -133,7 +157,7 @@ export default function Skills() {
           <p className="icon-text">Vercel</p>
           <SiVercel className="icons" size={60} />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

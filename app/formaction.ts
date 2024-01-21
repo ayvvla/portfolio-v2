@@ -1,6 +1,6 @@
 "use server";
 
-import { EmailTemplate } from "@/components/email-template";
+import { EmailTemplate } from "@/app/components/email-template";
 import { revalidatePath } from "next/cache";
 import { Resend } from "resend";
 

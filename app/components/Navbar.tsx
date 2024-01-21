@@ -2,7 +2,7 @@
 import {useEffect, useState } from "react";
 import Image from "next/image";
 import { Link } from "react-scroll";
-import logoImage from "../public/ayo.png";
+import logoImage from "../../public/ayo.png";
 import { animateScroll as scroll } from "react-scroll";
 
 import { BiMenuAltRight, BiX } from "react-icons/bi";

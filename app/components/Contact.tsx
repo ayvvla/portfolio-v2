@@ -5,6 +5,9 @@ import Submitbutton from "./submit-button";
 import "react-toastify/dist/ReactToastify.css";
 import { useFormState } from "react-dom";
 
+import { motion } from "framer-motion";
+import { fadeIn } from "@/variants";
+
 export default function Contact() {
   const formRef = useRef<HTMLFormElement>(null);
   const [state, formAction] = useFormState(submit, {
@@ -17,13 +20,28 @@ export default function Contact() {
   }, [state.status]);
 
   return (
-    <div className=" mx-auto bg-gray-100 px-8 mt-20 py-20" id="contact">
-      <h1 className="header">Contact</h1>
+    <div className=" mx-auto mt-20 bg-gray-100 px-8 py-20" id="contact">
+      <motion.h1
+        initial="hidden"
+        variants={fadeIn("down", 0.1)}
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.3 }}
+        className="header"
+      >
+        Contact
+      </motion.h1>
       <div className=" mt-10 ">
-        <p className="text-center text-sm md:text-lg">
+        <motion.p
+                initial="hidden"
+
+          variants={fadeIn("down", 0.1)}
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="text-center text-sm md:text-lg"
+        >
           Have a sweet project in mind or just want to say hi? <br /> Feel free
           to send me a message!
-        </p>
+        </motion.p>
         <form
           ref={formRef}
           className="form-control mx-auto mt-10 max-w-lg gap-6 md:mt-20"
