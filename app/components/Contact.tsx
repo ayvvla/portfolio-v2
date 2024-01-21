@@ -20,7 +20,7 @@ export default function Contact() {
   }, [state.status]);
 
   return (
-    <div className=" mx-auto mt-20 bg-gray-100 px-8 py-20" id="contact">
+    <div className=" mx-auto pt-20 bg-gray-100 px-8 py-20" id="contact">
       <motion.h1
         initial="hidden"
         variants={fadeIn("down", 0.1)}

@@ -27,7 +27,7 @@ const raleway = Raleway({ subsets: ["latin"] });
 
 export default function Skills() {
   return (
-    <div className=" mb-32 mt-24 px-4 text-center tracking-widest" id="skills">
+    <div className=" pb-32 pt-0 px-4 text-center tracking-widest bg-gray-100"  id="skills">
       <motion.h1
         initial="hidden"
         variants={fadeIn("down", 0.2)}
@@ -42,7 +42,7 @@ export default function Skills() {
         variants={fadeIn("down", 0.2)}
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="my-10"
+        className="mt-5 mb-14"
       >
         I have experience with these technologies{" "}
       </motion.p>

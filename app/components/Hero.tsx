@@ -6,20 +6,31 @@ import Typewriter from "./Typewriter";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
-import aa from "../../assets/aaa.webp";
+import bgImage from "../../assets/hero-bg.jpg";
 import Image from "next/image";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
 export default function Hero() {
   return (
-    <div className="hero relative min-h-[80vh] bg-[aa] bg-base-200">
-      <div className=""></div>
-      <Image src={aa} alt="hero image" className="hero-overlay" />
+    <div className="hero relative min-h-[100vh] bg-[aa] bg-base-200">
+      <div className="hero-overlay bg-base-200 " />
+
+      <Image
+        src={bgImage}
+        fill
+        sizes="100vw"
+        placeholder="blur"
+        alt="hero background image"
+        style = {{
+          objectFit: 'cover',
+        }}
+      />
+
       <div className="hero-content flex-col gap-20 text-center">
-        <div className="mt-9 flex max-w-3xl flex-col items-center">
+        <div className="flex max-w-3xl flex-col items-center justify-center">
           <h1
-            className={`text-3xl font-extrabold uppercase md:text-4xl ${raleway.className} mt-4`}
+            className={`text-3xl font-extrabold uppercase md:text-5xl ${raleway.className} mt-4`}
           >
             hello, i'm <span>Ayoola Michael</span>
           </h1>
@@ -27,13 +38,6 @@ export default function Hero() {
             <Typewriter />
           </div>
 
-          {/* <p className="my-14">
-            I specialize in front-end development, utilizing cutting-edge
-            technologies to bring design concepts to life. From responsive
-            layouts to captivating animations, I strive to make every click
-            memorable. At the heart of my work is a deep commitment to turning
-            creative visions into interactive, user-friendly websites
-          </p> */}
           <Link
             to="projects"
             spy={true}
@@ -46,8 +50,12 @@ export default function Hero() {
             </button>
           </Link>
         </div>
-        <SideWidget />
+        <Link
+          className="down-arrow absolute bottom-10 cursor-pointer"
+          to="about"
+        />
       </div>
+      <SideWidget />
     </div>
   );
 }

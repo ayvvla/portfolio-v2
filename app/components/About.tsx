@@ -11,7 +11,7 @@ const raleway = Raleway({ subsets: ["latin"] });
 
 export default function About() {
   return (
-    <div className="mb-32 mt-24" id="about">
+    <div className=" py-24 bg-gray-100" id="about">
       <motion.h1
         initial="hidden"
         variants={fadeIn("down", 0.2)}

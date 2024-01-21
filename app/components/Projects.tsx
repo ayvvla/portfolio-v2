@@ -15,7 +15,7 @@ const raleway = Raleway({ subsets: ["latin"] });
 
 export default function Projects() {
   return (
-    <div className="mt-16 bg-gray-50 px-2" id="projects">
+    <div className="py-16 bg-gray-200 px-2" id="projects">
       <div className="mx-auto max-w-[95%]">
         <motion.h1
           initial="hidden"
@@ -28,7 +28,7 @@ export default function Projects() {
         </motion.h1>
 
         <div className=" mx-auto flex max-w-[90%] flex-col gap-16">
-          <div className="flex flex-col gap-10 lg:flex-row lg:gap-5">
+          <div className="flex flex-col gap-10 xl:flex-row lg:gap-5">
             <Image
               src={tracy}
               height={500}
@@ -51,9 +51,9 @@ export default function Projects() {
                   and also a contact page
                 </p>
                 <div className="flex gap-2 whitespace-nowrap text-xs font-medium">
-                  <div className="rounded-sm bg-gray-200 p-2">Javascript</div>
-                  <div className="rounded-sm bg-gray-200 p-2">React</div>
-                  <div className="rounded-sm bg-gray-200 p-2">Tailwind CSS</div>
+                  <div className="rounded-sm bg-gray-100 p-2">Javascript</div>
+                  <div className="rounded-sm bg-gray-100 p-2">React</div>
+                  <div className="rounded-sm bg-gray-100 p-2">Tailwind CSS</div>
                 </div>
                 <div className="mt-6 flex gap-6">
                   <Link href="https://tracymelonarts.com">
@@ -67,7 +67,7 @@ export default function Projects() {
             </motion.div>
           </div>
 
-          <div className="flex flex-col gap-10 lg:flex-row lg:gap-5">
+          <div className="flex flex-col gap-10 xl:flex-row lg:gap-5">
             <Image
               src={movie}
               height={500}
@@ -90,9 +90,9 @@ export default function Projects() {
                   and also a contact page
                 </p>
                 <div className="flex gap-2 whitespace-nowrap text-xs font-medium">
-                  <div className="rounded-sm bg-gray-200 p-2">Javascript</div>
-                  <div className="rounded-sm bg-gray-200 p-2">React</div>
-                  <div className="rounded-sm bg-gray-200 p-2">Tailwind CSS</div>
+                  <div className="rounded-sm bg-gray-100 p-2">Javascript</div>
+                  <div className="rounded-sm bg-gray-100 p-2">React</div>
+                  <div className="rounded-sm bg-gray-100 p-2">Tailwind CSS</div>
                 </div>
                 <div className="mt-6 flex gap-6">
                   <Link href="https://reactmovietrailer.netlify.app">
@@ -106,7 +106,7 @@ export default function Projects() {
             </motion.div>
           </div>
 
-          <div className="flex flex-col gap-10 lg:flex-row lg:gap-5">
+          <div className="flex flex-col gap-10 xl:flex-row lg:gap-5">
             <Image
               src={blockboi}
               height={500}
@@ -129,10 +129,11 @@ export default function Projects() {
                   and also a contact page
                 </p>
                 <div className="flex gap-2 text-xs font-medium">
-                  <div className="rounded-sm bg-gray-200 p-2">Next</div>
-                  <div className="rounded-sm bg-gray-200 p-2">Tailwind Css</div>
-                  <div className="rounded-sm bg-gray-200 p-2">Prisma</div>
-                  <div className="rounded-sm bg-gray-200 p-2">Mongo DB</div>
+                  <div className="rounded-sm bg-gray-100 p-2">Next</div>
+                  <div className="rounded-sm bg-gray-100 p-2">TailwindCss</div>
+                  <div className="rounded-sm bg-gray-100 p-2">Prisma</div>
+                  <div className="rounded-sm bg-gray-100 p-2">MongoDB</div>
+                  <div className="rounded-sm bg-gray-100 p-2">Typescript</div>
                 </div>
                 <div className="mt-6 flex gap-6">
                   <Link href="https://beautnotes.netlify.app">
@@ -146,7 +147,7 @@ export default function Projects() {
             </motion.div>
           </div>
 
-          <div className="flex flex-col gap-10 lg:flex-row lg:gap-5">
+          <div className="flex flex-col gap-10 xl:flex-row lg:gap-5">
             <Image
               src={notes}
               height={500}
@@ -169,9 +170,9 @@ export default function Projects() {
                   and also a contact page
                 </p>
                 <div className="flex gap-2 whitespace-nowrap text-xs font-medium">
-                  <div className="rounded-sm bg-gray-200 p-2">Javascript</div>
-                  <div className="rounded-sm bg-gray-200 p-2">React</div>
-                  <div className="rounded-sm bg-gray-200 p-2">Tailwind CSS</div>
+                  <div className="rounded-sm bg-gray-100 p-2">Javascript</div>
+                  <div className="rounded-sm bg-gray-100 p-2">React</div>
+                  <div className="rounded-sm bg-gray-100 p-2">Tailwind CSS</div>
                 </div>
                 <div className="mt-6 flex gap-6">
                   <Link href="https://beautnotes.netlify.app">

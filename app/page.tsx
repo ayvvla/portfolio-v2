@@ -9,15 +9,13 @@ import Footer from "@/app/components/Footer";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="overflow-hidden">
       <Navbar />
       <Hero />
-      {/* <div className="mx-auto max-w-[100rem]"> */}
       <About />
       <Skills />
       <Projects />
       <Contact />
-      {/* </div> */}
       <Footer />
     </main>
   );
