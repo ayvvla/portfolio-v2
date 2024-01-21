@@ -23,7 +23,7 @@ export default function Hero() {
         placeholder="blur"
         alt="hero background image"
         style = {{
-          objectFit: 'cover',
+          objectFit: 'fill',
         }}
       />
 
@@ -45,7 +45,7 @@ export default function Hero() {
             duration={500}
             offset={-100}
           >
-            <button className="btn btn-primary btn-wide mt-10">
+            <button className="btn btn-primary btn-wide mt-20 ">
               View Projects
             </button>
           </Link>
